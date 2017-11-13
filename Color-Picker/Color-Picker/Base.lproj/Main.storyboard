@@ -17,12 +17,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sy2-QC-NKb">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gby-OE-jLF">
+                                <rect key="frame" x="166" y="390" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sy2-QC-NKb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EwV-Bs-4eV"/>
+                            <constraint firstItem="Sy2-QC-NKb" firstAttribute="top" secondItem="Gby-OE-jLF" secondAttribute="bottom" constant="40" id="HxV-XR-phx"/>
+                            <constraint firstItem="Gby-OE-jLF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Iv7-Az-HTe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sy2-QC-NKb" secondAttribute="trailing" id="lVG-xK-Y2u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sy2-QC-NKb" secondAttribute="bottom" id="qmz-Hg-g8z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="colorPickerView" destination="Sy2-QC-NKb" id="5HI-Jr-oT8"/>
+                        <outlet property="colorTitle" destination="Gby-OE-jLF" id="DMp-7l-Nr7"/>
+                        <outlet property="viewBackground" destination="8bC-Xf-vdC" id="oXk-bm-aDe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
